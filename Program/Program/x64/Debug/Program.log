@@ -1,0 +1,16 @@
+﻿  Program.cpp
+C:\Users\user\Desktop\Data-Struct\Program\Program\Program.cpp(28,18): warning C4553: '==': 식의 결과가 사용되지 않습니다. '='을(를) 의도했습니까?
+      C:\Users\user\Desktop\Data-Struct\Program\Program\Program.cpp(28,18):
+      템플릿 인스턴스화 컨텍스트(가장 오래된 인스턴스화 컨텍스트)가
+          C:\Users\user\Desktop\Data-Struct\Program\Program\Program.cpp(71,15):
+          컴파일되는 클래스 템플릿 인스턴스화 'List<int>'에 대한 참조를 확인하세요.
+          C:\Users\user\Desktop\Data-Struct\Program\Program\Program.cpp(23,10):
+          클래스 템플릿 멤버 함수 'void List<int>::push_front(T)'을(를) 컴파일하는 중입니다.
+          with
+          [
+              T=int
+          ]
+              C:\Users\user\Desktop\Data-Struct\Program\Program\Program.cpp(73,20):
+              'main'에서 'List<int>::push_front'에 대한 첫 번째 참조를 확인하세요.
+  
+  Program.vcxproj -> C:\Users\user\Desktop\Data-Struct\Program\x64\Debug\Program.exe
