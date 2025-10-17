@@ -39,7 +39,7 @@ public:
 
     void pop_front() {
         if (head == nullptr) {
-            //cout << "Linked List is Empty" << endl;
+            cout << "Linked List is Empty" << endl;
             return;
         }
 
