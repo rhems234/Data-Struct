@@ -2,95 +2,56 @@
 
 using namespace std;
 
-// 원형 연결 리스트
 template <typename T>
-class List {
-
+class Vector {
 private:
-
-	struct Node
-	{
-		T data;
-		Node* next;
-	};
-
-	int size;
-	Node* head;
+    T* pointer;
+    int count;
+    int capacity;
 
 public:
+    Vector() {
+        pointer = nullptr;
+        count = 0;
+        capacity = 0;
+    }
 
-	List() {
-		head = nullptr;
-		size = 0;
-	}
+    void resize(int newsize) {
+        // 1. capactiy에 새로운 size 값을 저장합니다.
+        capacity = newsize;
 
-	void push_back(T data) {
-		Node* newNode = new Node;
-		newNode->data = data;
-		
-		// 리스트가 비었을 때 자기 자신을 가리키게 끔.
-		if (head == nullptr) {
-			head = newNode;
-			newNode->next = head;
-		}
-		else {
-			newNode->next = head->next;
+        // 2. 새로운 포인터 변수를 생성해서 새롭게 만들어진 메모리 공간을 가리키도록 합니다.
+        T* newpointer = new T[newsize];
 
-			head->next = newNode;
+        // 3. 새로운 메모리 공간의 값을 초기화합니다.
+        for (int i = 0; i < newsize; i++) {
+            newpointer[i] = T();
+        }
 
-			head = newNode;
-		}
-		cout << "result : " << newNode->data << endl;
-		size++;
+        // 4. 기존 배열에 있는 값을 복사해서 새로운 배열에 넣어줍니다.
+        for (int i = 0; i < newsize ; i++) {
+            newpointer[i] = pointer[i];
+        }
 
-	}
+        // 5. 기본 배열의 메모리를 해제합니다.
+        delete[] pointer;
 
-	void push_front(T data) {
-		Node* newNode = new Node;
-		newNode->data = data;
+        // 6. 기존 배열을 가리키던 포인터 변수의 값을 새로운 배열의 시작 주소로 가리킵니다.
+        pointer = newpointer;
 
-		if (head == nullptr) {
-			head = newNode;
-			newNode->next = head;
-		}
-		else {
-			newNode->next = head->next;
-			head->next = newNode;
-		}
+        if (count > newsize) {
+            count = newsize;
+        }
 
-		cout << "result : " << newNode->data << endl;
-		size++;
-
-	}
-
-	void pop_front() {
-		if (head == nullptr) {
-			cout << "Linked List is Empty" << endl;
-			return;
-		}
-
-		Node* deleteNode = new Node;
-		deleteNode = head;
-		head = head->next;
-
-
-
-	}
+    }
 
 };
 
 int main()
 {
+    Vector<int> vector;
 
-	List<int> list;
-
-	list.push_back(10);
-	list.push_back(20);
-	list.push_back(30);
-
-	list.push_front(40);
-	list.push_front(50);
-	list.push_front(60);
+    vector.resize(5);
 
     return 0;
 }
