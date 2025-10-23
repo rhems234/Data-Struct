@@ -13,6 +13,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class 3th (Circle Linked Li
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class 4th (Vector)", "Class 4th (Vector)\Class 4th (Vector).vcxproj", "{7127DD40-5591-4361-ADB6-4481A28F0C8B}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Class 5th (Stack)", "Class 5th (Stack)\Class 5th (Stack).vcxproj", "{F6FEB840-4325-4EDD-ACCC-7772E622E362}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -61,6 +63,14 @@ Global
 		{7127DD40-5591-4361-ADB6-4481A28F0C8B}.Release|x64.Build.0 = Release|x64
 		{7127DD40-5591-4361-ADB6-4481A28F0C8B}.Release|x86.ActiveCfg = Release|Win32
 		{7127DD40-5591-4361-ADB6-4481A28F0C8B}.Release|x86.Build.0 = Release|Win32
+		{F6FEB840-4325-4EDD-ACCC-7772E622E362}.Debug|x64.ActiveCfg = Debug|x64
+		{F6FEB840-4325-4EDD-ACCC-7772E622E362}.Debug|x64.Build.0 = Debug|x64
+		{F6FEB840-4325-4EDD-ACCC-7772E622E362}.Debug|x86.ActiveCfg = Debug|Win32
+		{F6FEB840-4325-4EDD-ACCC-7772E622E362}.Debug|x86.Build.0 = Debug|Win32
+		{F6FEB840-4325-4EDD-ACCC-7772E622E362}.Release|x64.ActiveCfg = Release|x64
+		{F6FEB840-4325-4EDD-ACCC-7772E622E362}.Release|x64.Build.0 = Release|x64
+		{F6FEB840-4325-4EDD-ACCC-7772E622E362}.Release|x86.ActiveCfg = Release|Win32
+		{F6FEB840-4325-4EDD-ACCC-7772E622E362}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{C6697E3A-D9DF-4A9E-B2A1-5B13DFCF80DD}|Program\\Program.vcxproj|solutionrelative:Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7127DD40-5591-4361-ADB6-4481A28F0C8B}|Class 4th (Vector)\\Class 4th (Vector).vcxproj|C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Class 4th (Vector)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{7127DD40-5591-4361-ADB6-4481A28F0C8B}|Class 4th (Vector)\\Class 4th (Vector).vcxproj|solutionrelative:Class 4th (Vector)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{F6FEB840-4325-4EDD-ACCC-7772E622E362}|Class 5th (Stack)\\Class 5th (Stack).vcxproj|C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Class 5th (Stack)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{F6FEB840-4325-4EDD-ACCC-7772E622E362}|Class 5th (Stack)\\Class 5th (Stack).vcxproj|solutionrelative:Class 5th (Stack)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -24,13 +24,13 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "Source.cpp",
-              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Class 4th (Vector)\\Source.cpp",
-              "RelativeDocumentMoniker": "Class 4th (Vector)\\Source.cpp",
-              "ToolTip": "C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Class 4th (Vector)\\Source.cpp",
-              "RelativeToolTip": "Class 4th (Vector)\\Source.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAADwvxIAAAAcAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Class 5th (Stack)\\Source.cpp",
+              "RelativeDocumentMoniker": "Class 5th (Stack)\\Source.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Class 5th (Stack)\\Source.cpp",
+              "RelativeToolTip": "Class 5th (Stack)\\Source.cpp",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-10-22T10:39:59.707Z",
+              "WhenOpened": "2025-10-23T10:27:01.77Z",
               "EditorCaption": ""
             },
             {
@@ -41,7 +41,7 @@
               "RelativeDocumentMoniker": "Program\\Program.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Program\\Program.cpp",
               "RelativeToolTip": "Program\\Program.cpp",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAgwDEAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAAgwCUAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-15T09:07:22.442Z",
               "EditorCaption": ""
