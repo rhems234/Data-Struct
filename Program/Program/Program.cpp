@@ -2,91 +2,103 @@
 
 using namespace std;
 
-#define SIZE 4
-
-// 원형 큐
 template <typename T>
-class Queue {
+class PriorityQueue {
+
 private:
+    int index;
+    int capacity;
+    T* container;
+    int child;
+    int parent;
 
-    int rear;
-    int front;
-    T container[SIZE];
-    
 public:
+    PriorityQueue() {
+        index = 0;
+        capacity = 0;
+        container = nullptr;
+        child = 0;
+        parent = 0;
+    }
 
-    Queue() {
-        rear = SIZE - 1;
-        front = SIZE - 1;
-        for (int i = 0; i < SIZE; i++) {
-            container[i] = NULL;
+    void resize(int newsize) {
+        capacity = newsize;
+
+        T* newpointer = new T[capacity];
+
+        for (int i = 0; i < capacity; i++) {
+            newpointer[i] = NULL;
         }
-        
+
+        for (int i = 0; i < index; i++) {
+            newpointer[i] = container[i];
+        }
+
+        delete[] container;
+
+        container = newpointer;
     }
 
     void push(T data) {
-        if ((rear + 1) % SIZE == front) {
-            cout << "Queue is Full." << endl;
-            return;
+
+        if (capacity == 0) {
+            resize(1);
+        }
+        else if (capacity <= index) {
+            resize(capacity * 2);
         }
 
-        rear = (rear + 1) % SIZE;
-        container[rear] = data;
+        container[index] = data;
 
-        cout << "Data : " << container[rear] << endl;
-    }
+        child = index;
 
-    void pop() {
-        if (rear == front) {
-            cout << "Queue is empty." << endl;
-            return;
+        parent = (child - 1) / 2;
+
+        while (container[child] > container[parent]) {
+            /*T temp = container[parent];
+            container[parent] = container[child];
+            container[child] = temp;*/
+
+            std::swap(container[parent], container[child]);
+
+            child = parent;
+            parent = (child - 1) / 2;
         }
 
-        front = (front + 1) % SIZE;
-        container[front] = NULL;
-
+        index++;
     }
 
-    const T& peek() {
-        if (empty()) {
-            cout << "Queue is empty." << endl;
+    ~PriorityQueue() {
+        delete[] container;
+    }
+
+    const T& top() {
+        if (container == nullptr) {
             exit(1);
         }
 
-        return container[(front + 1) % SIZE];
+        return container[0];
     }
 
     const bool& empty() {
-        return rear == front;
-    }
-
-    const int& size() {
-        return (rear - front + SIZE) % SIZE;
+        return index == 0;
     }
 
 };
 
 int main()
 {
-    Queue<int> queue;
+    PriorityQueue<int> priorityqueue;
 
-    queue.push(10);
-    queue.push(20);
-    queue.push(30);
+    priorityqueue.push(10);
+    priorityqueue.push(20);
+    priorityqueue.push(30);
+    priorityqueue.push(60);
+    priorityqueue.push(40);
 
-    cout << "Queue Size : " << queue.size() << endl;
-    
-    while (queue.empty() == false) {
-        cout << queue.peek() << endl;
+    cout << priorityqueue.top() << endl;
 
-        queue.pop();
-    }
-
-    cout << "Queue Size : " << queue.size() << endl;
-
-    queue.push(40);
-    queue.push(50);
-    queue.push(60);
+    cout << priorityqueue.empty() << endl;
 
     return 0;
 }
