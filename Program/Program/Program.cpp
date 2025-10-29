@@ -2,103 +2,89 @@
 
 using namespace std;
 
-template <typename T>
-class PriorityQueue {
+template<typename KEY, typename VALUE>
+class HashTable {
+private :
+    struct Node {
+        KEY key;
+        VALUE value;
 
-private:
-    int index;
+        Node* next;
+    };
+
+    struct Bucket {
+        int count;
+        Node* head;
+    };
+
+    int size;
     int capacity;
-    T* container;
-    int child;
-    int parent;
+
+    Bucket* bucket;
 
 public:
-    PriorityQueue() {
-        index = 0;
-        capacity = 0;
-        container = nullptr;
-        child = 0;
-        parent = 0;
-    }
+    HashTable() {
+        size = 0;
+        capacity = 8;
 
-    void resize(int newsize) {
-        capacity = newsize;
-
-        T* newpointer = new T[capacity];
+        bucket = new Bucket[capacity];
 
         for (int i = 0; i < capacity; i++) {
-            newpointer[i] = NULL;
+            bucket[i].head = nullptr;
+            bucket[i].count = 0;
         }
-
-        for (int i = 0; i < index; i++) {
-            newpointer[i] = container[i];
-        }
-
-        delete[] container;
-
-        container = newpointer;
     }
 
-    void push(T data) {
-
-        if (capacity == 0) {
-            resize(1);
-        }
-        else if (capacity <= index) {
-            resize(capacity * 2);
-        }
-
-        container[index] = data;
-
-        child = index;
-
-        parent = (child - 1) / 2;
-
-        while (container[child] > container[parent]) {
-            /*T temp = container[parent];
-            container[parent] = container[child];
-            container[child] = temp;*/
-
-            std::swap(container[parent], container[child]);
-
-            child = parent;
-            parent = (child - 1) / 2;
-        }
-
-        index++;
+    template<typename KEY>
+    unsigned int hash_function(KEY key) {
+        return (unsigned int)key % capacity;
     }
 
-    ~PriorityQueue() {
-        delete[] container;
-    }
+    template<>
+    unsigned int hash_function(const char * key) {
+        int sum = 0;
 
-    const T& top() {
-        if (container == nullptr) {
-            exit(1);
+        for (int i = 0; *key != '\0'; i++) {
+            sum += key[i];
+
+            key = key + 1;
         }
 
-        return container[0];
+        return (unsigned int)sum % capacity;
     }
 
-    const bool& empty() {
-        return index == 0;
+    void insert(KEY key, VALUE value) {
+        unsigned int index = hash_function(key);
+
+        Node* newNode = new Node;
+        newNode->key = key;
+        newNode->value = value;
+        newNode->next = nullptr;
+
+        if (newNode->value >= 1) {
+            cout << "Insert complete" << endl;
+            newNode->next = bucket[index].head;
+            bucket[index].head = newNode;
+
+            bucket[index].count++;
+        }
+
     }
 
 };
 
 int main()
 {
-    PriorityQueue<int> priorityqueue;
+    HashTable<const char *, int> hashtable;
 
-    priorityqueue.push(10);
-    priorityqueue.push(20);
-    priorityqueue.push(30);
-    priorityqueue.push(60);
-    priorityqueue.push(40);
+    cout << hashtable.hash_function(3) << endl;
+    cout << hashtable.hash_function(4) << endl;
+    cout << hashtable.hash_function(5) << endl;
 
-    cout << priorityqueue.top() << endl;
-
-    cout << priorityqueue.empty() << endl;
+    hashtable.insert("1", 0);
+    hashtable.insert("2", 1);
+    hashtable.insert("3", 2);
+    hashtable.insert("4", 3);
 
     return 0;
 }
