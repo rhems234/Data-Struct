@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{C6697E3A-D9DF-4A9E-B2A1-5B13DFCF80DD}|Program\\Program.vcxproj|C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C6697E3A-D9DF-4A9E-B2A1-5B13DFCF80DD}|Program\\Program.vcxproj|solutionrelative:Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2CE1A548-2DA9-45E8-96C8-311F613E1ABE}|Class 8th (Priority Queue)\\Class 8th (Priority Queue).vcxproj|C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Class 8th (Priority Queue)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{2CE1A548-2DA9-45E8-96C8-311F613E1ABE}|Class 8th (Priority Queue)\\Class 8th (Priority Queue).vcxproj|solutionrelative:Class 8th (Priority Queue)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Class 8th (Priority Queue)\\Source.cpp",
+              "RelativeDocumentMoniker": "Class 8th (Priority Queue)\\Source.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Class 8th (Priority Queue)\\Source.cpp",
+              "RelativeToolTip": "Class 8th (Priority Queue)\\Source.cpp",
+              "ViewState": "AgIAAAYAAAAAAAAAAADwvxIAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-03T09:09:26.457Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "Program\\Program.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Program\\Program.cpp",
               "RelativeToolTip": "Program\\Program.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACYAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-15T09:07:22.442Z",
               "EditorCaption": ""

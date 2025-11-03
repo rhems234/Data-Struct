@@ -23,11 +23,40 @@ public:
         vertex = nullptr;
         matrix = nullptr;
     }
+
+    void resize(int newsize) {
+        T& newVertexeSet = new T[newsize];
+        for (int i = 0; i < size; i++) {
+            newVertexeSet[i] = vertex[i];
+        }
+        delete[] vertex;
+        vertex = newVertexeSet;
+        capacity = newsize;
+    }
+
+    void push(T data) {
+        
+        if (capacity >= 0) {
+            size++;
+        }
+
+    }
+
+    void edge(int i, int j) {
+        if (vertex == nullptr) {
+            cout << "adjacency matrix is empty" << endl;
+        }
+    }
 };
 
 int main()
 {
     Graph<int> graph;
+
+    graph.resize(5);
+
+    /*graph.push('A');
+    graph.push('B');*/
 
     return 0;
 }
