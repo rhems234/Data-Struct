@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{C6697E3A-D9DF-4A9E-B2A1-5B13DFCF80DD}|Program\\Program.vcxproj|C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C6697E3A-D9DF-4A9E-B2A1-5B13DFCF80DD}|Program\\Program.vcxproj|solutionrelative:Program\\Program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{76F8C3EC-2F28-4C14-A728-91EB9CC8FE26}|Class 12th (Binary Serach Tree)\\Class 12th (Binary Serach Tree).vcxproj|C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Class 12th (Binary Serach Tree)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{76F8C3EC-2F28-4C14-A728-91EB9CC8FE26}|Class 12th (Binary Serach Tree)\\Class 12th (Binary Serach Tree).vcxproj|solutionrelative:Class 12th (Binary Serach Tree)\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,8 +18,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Class 12th (Binary Serach Tree)\\Source.cpp",
+              "RelativeDocumentMoniker": "Class 12th (Binary Serach Tree)\\Source.cpp",
+              "ToolTip": "C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Class 12th (Binary Serach Tree)\\Source.cpp",
+              "RelativeToolTip": "Class 12th (Binary Serach Tree)\\Source.cpp",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAuwJIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-07T10:41:14.004Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -24,7 +41,7 @@
               "RelativeDocumentMoniker": "Program\\Program.cpp",
               "ToolTip": "C:\\Users\\user\\Desktop\\Data-Struct\\Program\\Program\\Program.cpp",
               "RelativeToolTip": "Program\\Program.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-10-15T09:07:22.442Z",
               "EditorCaption": ""
